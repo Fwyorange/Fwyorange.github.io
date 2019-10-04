@@ -4,7 +4,7 @@
 
 
 
-<html lang="en">
+<html lang="zh-Hans">
 <head>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
@@ -29,7 +29,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Mist',
     version: '7.4.1',
     exturl: false,
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
@@ -51,21 +51,24 @@
     path: '',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
-      copy_button: 'Copy',
-      copy_success: 'Copied',
-      copy_failure: 'Copy failed'
+      copy_button: 'Kopieren',
+      copy_success: 'Kopiert',
+      copy_failure: 'Kopieren fehlgeschlagen'
     },
     sidebarPadding: 40
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ChasePavement">
+  <meta name="description" content="什么时候才能有只猫呢？">
+<meta property="og:type" content="website">
+<meta property="og:title" content="知你故来风">
 <meta property="og:url" content="http://yoursite.com/archives/2019/10/index.html">
-<meta property="og:site_name" content="ChasePavement">
-<meta property="og:locale" content="en">
+<meta property="og:site_name" content="知你故来风">
+<meta property="og:description" content="什么时候才能有只猫呢？">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ChasePavement">
+<meta name="twitter:title" content="知你故来风">
+<meta name="twitter:description" content="什么时候才能有只猫呢？">
   <link rel="canonical" href="http://yoursite.com/archives/2019/10/">
 
 
@@ -80,7 +83,7 @@
   };
 </script>
 
-  <title>Archive | ChasePavement</title>
+  <title>Archiv | 知你故来风</title>
   
 
 
@@ -126,14 +129,16 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">ChasePavement</span>
+        <span class="site-title">知你故来风</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+        <p class="site-subtitle">满船清梦压星河</p>
+      
   </div>
 
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
+    <div class="toggle" aria-label="Navigationsleiste an/ausschalten">
       <span class="toggle-line toggle-line-first"></span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
@@ -153,7 +158,7 @@
       
     
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Startseite</a>
 
   </li>
       
@@ -164,7 +169,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archiv</a>
 
   </li>
   </ul>
@@ -209,7 +214,7 @@
         
           
         
-        <span class="collection-header">Um..! 2 posts in total. Keep on posting.</span>
+        <span class="collection-header">Öhm..! Ein Artikel. Bleib dran.</span>
       </div>
       
 
@@ -249,35 +254,6 @@
 
 
 
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-10-03T17:48:26+08:00"
-              content="2019-10-03">
-          10-03
-        </time>
-      </div>
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/10/03/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-        
-      </h2>
-
-    </header>
-  </article>
-
-
-
 
     </div>
   </div>
@@ -306,10 +282,10 @@
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          Table of Contents
+          Inhaltsverzeichnis
         </li>
         <li class="sidebar-nav-overview">
-          Overview
+          Übersicht
         </li>
       </ul>
 
@@ -320,8 +296,11 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">orange</p>
-  <div class="site-description" itemprop="description"></div>
+    <img class="site-author-image" itemprop="image"
+      src="/uploads/author.png"
+      alt="一只橙子咩咩咩">
+  <p class="site-author-name" itemprop="name">一只橙子咩咩咩</p>
+  <div class="site-description" itemprop="description">什么时候才能有只猫呢？</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -329,8 +308,8 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
-          <span class="site-state-item-name">posts</span>
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">Artikel</span>
         </a>
       </div>
     
@@ -355,11 +334,11 @@
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">orange</span>
+  <span class="author" itemprop="copyrightHolder">一只橙子咩咩咩</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
+  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.4.1</div>
+  <div class="theme-info">Design – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.4.1</div>
 
         
 
@@ -385,6 +364,7 @@
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 <script src="/js/utils.js?v=7.4.1"></script><script src="/js/motion.js?v=7.4.1"></script>
 <script src="/js/schemes/muse.js?v=7.4.1"></script>
+
 <script src="/js/next-boot.js?v=7.4.1"></script>
 
 
