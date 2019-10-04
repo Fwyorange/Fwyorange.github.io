@@ -38,7 +38,7 @@ function loadWidget(waifuPath, apiPath) {
 		$("#waifu-tool .fa-user-circle").click(loadOtherModel);
 		$("#waifu-tool .fa-street-view").click(loadRandModel);
 		$("#waifu-tool .fa-camera-retro").click(() => {
-			showMessage("照好了嘛，是不是很可爱呢？", 6000, 9);
+			showMessage("照好了嘛，我是不是很可爱喵？", 6000, 9);
 			Live2D.captureName = "photo.png";
 			Live2D.captureFrame = true;
 		});
@@ -60,7 +60,7 @@ function loadWidget(waifuPath, apiPath) {
 			return "";
 		};
 		$(document).on("copy", () => {
-			showMessage("你都复制了些什么呀，转载要记得加上出处哦！", 6000, 9);
+			showMessage("喵喵喵！你在复制什么呢？", 6000, 9);
 		});
 		$(document).on("visibilitychange", () => {
 			if (!document.hidden) showMessage("哇，你终于回来了～", 6000, 9);
@@ -72,11 +72,11 @@ function loadWidget(waifuPath, apiPath) {
 		var SiteIndexUrl = location.port ? `${location.protocol}//${location.hostname}:${location.port}/` : `${location.protocol}//${location.hostname}/`, text; //自动获取主页
 		if (location.href == SiteIndexUrl) { //如果是主页
 			var now = new Date().getHours();
-			if (now > 5 && now <= 7) text = "早上好！一日之计在于晨，美好的一天就要开始了。";
+			if (now > 5 && now <= 7) text = "早安！昨晚夜里的星星有没有我啊？";
 			else if (now > 7 && now <= 11) text = "上午好！工作顺利嘛，不要久坐，多起来走动走动哦！";
 			else if (now > 11 && now <= 14) text = "中午了，工作了一个上午，现在是午餐时间！";
 			else if (now > 14 && now <= 17) text = "午后很容易犯困呢，今天的运动目标完成了吗？";
-			else if (now > 17 && now <= 19) text = "傍晚了！窗外夕阳的景色很美丽呢，最美不过夕阳红～";
+			else if (now > 17 && now <= 19) text = "傍晚了！窗外夕阳的景色很美丽呢，如果我们可以一起看就好了呢～";
 			else if (now > 19 && now <= 21) text = "晚上好，今天过得怎么样？";
 			else if (now > 21 && now <= 23) text = ["已经这么晚了呀，早点休息吧，晚安～", "深夜时要爱护眼睛呀！"];
 			else text = "你是夜猫子呀？这么晚还不睡觉，明天起的来嘛？";
@@ -99,7 +99,7 @@ function loadWidget(waifuPath, apiPath) {
 	var userAction = false,
 		hitokotoTimer = null,
 		messageTimer = null,
-		messageArray = ["好久不见，日子过得好快呢……", "大坏蛋！你都多久没碰人家了呀，嘤嘤嘤～", "嗨～快来逗我玩吧！", "拿小拳拳锤你胸口！"];
+		messageArray = ["白茶清欢无别事，我在等风也等你......", "大坏蛋！你都多久没碰人家了呀，嘤嘤嘤～", "要吃糖么？试试我吧~( ˃̶̤́ ꒳ ˂̶̤̀ )", "拿小拳拳锤你胸口！"];
 	if ($(".fa-share-alt").is(":hidden")) messageArray.push("记得把小家加入Adblock白名单哦！");
 	$(document).mousemove(() => {
 		userAction = true;
@@ -223,15 +223,15 @@ function loadWidget(waifuPath, apiPath) {
 
 function initWidget(waifuPath = "/waifu-tips.json", apiPath = "") {
 	if (screen.width <= 768) return;
-	$("body").append(`<div id="waifu-toggle" style="margin-left: -100px;">
+	$("body").append(`<div id="waifu-toggle" style="margin-right: -100px;">
 			<span>看板娘</span>
 		</div>`);
 	$("#waifu-toggle").hover(() => {
-		$("#waifu-toggle").animate({ "margin-left": -30 }, 500);
+		$("#waifu-toggle").animate({ "margin-right": -30 }, 500);
 	}, () => {
-		$("#waifu-toggle").animate({ "margin-left": -50 }, 500);
+		$("#waifu-toggle").animate({ "margin-right": -50 }, 500);
 	}).click(() => {
-		$("#waifu-toggle").animate({ "margin-left": -100 }, 1000, () => {
+		$("#waifu-toggle").animate({ "margin-right": -100 }, 1000, () => {
 			$("#waifu-toggle").hide();
 		});
 		if ($("#waifu-toggle").attr("first-time")) {
@@ -243,7 +243,7 @@ function initWidget(waifuPath = "/waifu-tips.json", apiPath = "") {
 		}
 	});
 	if (localStorage.getItem("waifu-display") && new Date().getTime() - localStorage.getItem("waifu-display") <= 86400000) {
-		$("#waifu-toggle").attr("first-time", true).css({ "margin-left": -50 });
+		$("#waifu-toggle").attr("first-time", true).css({ "margin-right": -50 });
 	} else {
 		loadWidget(waifuPath, apiPath);
 	}
